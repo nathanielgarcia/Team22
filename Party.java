@@ -1,5 +1,6 @@
 package application;
 
+//branch1 comment
 // commenting stuff
 public class Party {
 	private String name;
