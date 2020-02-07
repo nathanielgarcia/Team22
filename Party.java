@@ -1,5 +1,6 @@
 package application;
 
+// commenting stuff
 public class Party {
 	private String name;
 	private float seats;
