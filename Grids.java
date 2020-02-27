@@ -1,0 +1,125 @@
+import java.util.ArrayList;
+
+public class Grids extends Input{
+	private ArrayList row1 = new ArrayList();
+	private ArrayList row2 = new ArrayList();
+	private ArrayList row3 = new ArrayList();
+	private ArrayList row4 = new ArrayList();
+	private ArrayList row5 = new ArrayList();
+	private ArrayList row6 = new ArrayList();
+	private ArrayList<ArrayList> allRows = new ArrayList<ArrayList>();
+	private ArrayList rough = new ArrayList();
+	private Lower lower;
+	private Upper upper;
+	private Grids board;
+	private char type;
+	
+	public void Grids(char level) {
+		this.type = level;
+		lower = new Lower(this.type);
+		upper = new Upper(this.type);
+		
+	}
+	public ArrayList setLowerBoard() {
+		rough = lower.createBoard();
+		
+		if (type == 'N') {
+			String hold;
+			for (int i = 0; i < 6; i++) {
+				hold = (String)rough.get(i);
+				row1.add(hold);
+			}
+			for (int i = 6; i < 12; i++) {
+				hold = (String)rough.get(i);
+				row2.add(hold);
+			}
+			for (int i = 12; i < 18; i++) {
+				hold = (String)rough.get(i);
+				row3.add(hold);
+			}
+			for (int i = 18; i < 24; i++) {
+				hold = (String)rough.get(i);
+				row4.add(hold);
+			}
+			for (int i = 24; i < 30; i++) {
+				hold = (String)rough.get(i);
+				row5.add(hold);
+			}
+			for (int i = 30; i < 36; i++) {
+				hold = (String)rough.get(i);
+				row6.add(hold);
+			}
+			allRows.add(row1);
+			allRows.add(row2);
+			allRows.add(row3);
+			allRows.add(row4);
+			allRows.add(row5);
+			allRows.add(row6);
+			
+		}
+		else if (type == 'I') {
+			//9
+			
+		}
+		
+		else {//12
+			
+		}
+		return allRows;
+		
+	}
+	public ArrayList setUpperBoard() {
+		rough = upper.createBoard();
+		
+		if (type == 'N') {
+			String hold;
+			for (int i = 0; i < 6; i++) {
+				hold = (String)rough.get(i);
+				row1.add(hold);
+			}
+			for (int i = 6; i < 12; i++) {
+				hold = (String)rough.get(i);
+				row2.add(hold);
+			}
+			for (int i = 12; i < 18; i++) {
+				hold = (String)rough.get(i);
+				row3.add(hold);
+			}
+			for (int i = 18; i < 24; i++) {
+				hold = (String)rough.get(i);
+				row4.add(hold);
+			}
+			for (int i = 24; i < 30; i++) {
+				hold = (String)rough.get(i);
+				row5.add(hold);
+			}
+			for (int i = 30; i < 36; i++) {
+				hold = (String)rough.get(i);
+				row6.add(hold);
+			}
+			allRows.add(row1);
+			allRows.add(row2);
+			allRows.add(row3);
+			allRows.add(row4);
+			allRows.add(row5);
+			allRows.add(row6);
+			
+		}
+		else if (type == 'I') {
+			//9
+			
+		}
+		
+		else {//12
+			
+		}
+		return allRows;
+		
+	}
+		
+	public ArrayList getBoard() {
+		ArrayList c = new ArrayList();
+		return c;
+	}
+
+}
