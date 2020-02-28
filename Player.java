@@ -44,7 +44,7 @@ import java.util.Scanner;
 				}
 			}
 			// if bomb is in cell you lose
-				if (cell== "B") {
+				if (cell== "[B]") {
 					System.out.println("Game Over");
 					System.out.println("You have Clicked on a Bomb!");}
 				
