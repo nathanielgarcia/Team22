@@ -42,6 +42,8 @@ import java.util.Scanner;
 				if (RowNum == 6) {
 					cell = (String)  grid.getallRows().get(3).get(ColumnNum);
 				}
+				else (){
+					System.out.println("The number entered is not valid");
 			}
 			// if bomb is in cell you lose
 				if (cell== "[B]") {
