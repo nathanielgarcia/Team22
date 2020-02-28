@@ -23,7 +23,7 @@ public class Lower extends Grids{
 			int rs = game.getRowSize();
 			int y = x + 1;
 			int bombLocation = ((int)c.get(x) - 1) * (rs) + ((int)c.get(y));
-			bombSquad.set(bombLocation, "B");
+			bombSquad.set(bombLocation, "[B]");
 		}
 		
 		bombSquad = game.numbers(bombSquad, type);
