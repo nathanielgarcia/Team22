@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Grids extends Input{
+public class Grids extends Player{
 	private ArrayList row1 = new ArrayList();
 	private ArrayList row2 = new ArrayList();
 	private ArrayList row3 = new ArrayList();
@@ -13,6 +13,10 @@ public class Grids extends Input{
 	private Upper upper;
 	private Grids board;
 	private char type;
+	
+	public ArrayList<ArrayList> getallRows() {
+		return allRows;
+	}
 	
 	public void Grids(char level) {
 		this.type = level;
