@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Upper extends Grids{
 	private char type;
-	private ArrayList bombSquad = new ArrayList();
+	private ArrayList<String> bombSquad = new ArrayList<String>(36);
 	
 	public Upper(char level) {
 		this.type = level;
@@ -13,9 +13,11 @@ public class Upper extends Grids{
 		//return bombSquad;
 	//}
 
-	public ArrayList createBoard() {
-		
-		return null;
+	public ArrayList createUpperBoard() {
+		for (int i = 0; i < 36; i++){
+			bombSquad.add("[ ]");
+		}
+		return bombSquad;
 	}
 
 
