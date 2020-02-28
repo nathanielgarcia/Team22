@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 	public class Player {
 		private int NumofBombs= 12 ;
@@ -19,25 +20,27 @@ import java.util.Scanner;
 				int RowNum = scanrow.nextInt(); //get row input
 		
 				int ColumnNum = (scanrow.nextInt()-1);// get column input
-				Grid grid = new Grid();
+				Grids  grid = new Grids();
+			;
+				
 		
 				if (RowNum==1) {               // find which box is chosen
-					cell = (String)  grid.getRows().get(0).get(ColumnNum);
+					cell = (String) grid.getallRows().get(0).get(ColumnNum) ;
 				}
 				if (RowNum == 2) {
-					cell =  (String) grid.getRows().get(1).get(ColumnNum);
+					cell =  (String) grid.getallRows().get(1).get(ColumnNum);
 				}
 				if (RowNum == 3) {
-					cell = (String) grid.getRows().get(2).get(ColumnNum);
+					cell = (String) grid.getallRows().get(2).get(ColumnNum);
 				}
-				if (RowNum == 4) {
-					cell = (String) grid.getRows().get(3).get(ColumnNum);
+				if (RowNum == 4) { 
+					cell = (String) grid.getallRows().get(3).get(ColumnNum);
 				}
 				if (RowNum == 5) {
-					cell = (String) grid.getRows().get(4).get(ColumnNum);
+					cell = (String)  grid.getallRows().get(3).get(ColumnNum);
 				}
 				if (RowNum == 6) {
-					cell = (String) grid.getRows().get(5).get(ColumnNum);
+					cell = (String)  grid.getallRows().get(3).get(ColumnNum);
 				}
 			}
 			// if bomb is in cell you lose
@@ -47,9 +50,5 @@ import java.util.Scanner;
 				
 				return cell;
 		}
-	}
 		
-	
-	
-
-
+	}
