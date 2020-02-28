@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 
 public class Grids extends Player{
-	private ArrayList row1 = new ArrayList();
-	private ArrayList row2 = new ArrayList();
-	private ArrayList row3 = new ArrayList();
-	private ArrayList row4 = new ArrayList();
-	private ArrayList row5 = new ArrayList();
-	private ArrayList row6 = new ArrayList();
-	private ArrayList<ArrayList> allRows = new ArrayList<ArrayList>();
+	private ArrayList row1 = new ArrayList(6);
+	private ArrayList row2 = new ArrayList(6);
+	private ArrayList row3 = new ArrayList(6);
+	private ArrayList row4 = new ArrayList(6);
+	private ArrayList row5 = new ArrayList(6);
+	private ArrayList row6 = new ArrayList(6);
+	private ArrayList<ArrayList> allRows = new ArrayList<ArrayList>(6);
 	private ArrayList rough = new ArrayList();
 	private Lower lower;
 	private Upper upper;
@@ -25,7 +25,7 @@ public class Grids extends Player{
 		
 	}
 	public ArrayList setLowerBoard() {
-		rough = lower.createBoard();
+		rough = lower.createLowerBoard();
 		
 		if (type == 'N') {
 			String hold;
@@ -73,7 +73,7 @@ public class Grids extends Player{
 		
 	}
 	public ArrayList setUpperBoard() {
-		rough = upper.createBoard();
+		rough = upper.createUpperBoard();
 		
 		if (type == 'N') {
 			String hold;
