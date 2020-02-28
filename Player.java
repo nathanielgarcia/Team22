@@ -1,8 +1,11 @@
 
+import java.util.ArrayList;
 import java.util.Scanner;
 	public class Player {
 		private int NumofBombs= 12 ;
 		private String cell="";
+		private ArrayList row;
+		
 				
 		public void SetNumOfBombs() {
 			}
@@ -10,8 +13,10 @@ import java.util.Scanner;
 		public int GetNumofBombs() {
 			return NumofBombs;
 		}
-		public String Move() {
-			while( cell!="B") {
+		
+		public  void Move(ArrayList lowergrid) {
+			while( cell!="[B]") {
+			
 				Scanner scanrow = new Scanner(System.in);
 		
 				System.out.println("enter row(1-6) and column(1-6):");
@@ -20,37 +25,47 @@ import java.util.Scanner;
 				int RowNum = scanrow.nextInt(); //get row input
 		
 				int ColumnNum = (scanrow.nextInt()-1);// get column input
-				Grids  grid = new Grids();
-			;
 				
-		
+				System.out.println(lowergrid.get(0));
+				System.out.println(lowergrid.get(1));
+				System.out.println(lowergrid.get(2));
+				System.out.println(lowergrid.get(3));
+				System.out.println(lowergrid.get(4));
+				System.out.println(lowergrid.get(5));
 				if (RowNum==1) {               // find which box is chosen
-					cell = (String) grid.getallRows().get(0).get(ColumnNum) ;
+					row = (ArrayList) lowergrid.get(0);
+					cell = (String) row.get(ColumnNum);
 				}
 				if (RowNum == 2) {
-					cell =  (String) grid.getallRows().get(1).get(ColumnNum);
+					row = (ArrayList) lowergrid.get(1);
+					cell = (String) row.get(ColumnNum);
 				}
 				if (RowNum == 3) {
-					cell = (String) grid.getallRows().get(2).get(ColumnNum);
+					row = (ArrayList) lowergrid.get(2);
+					cell = (String) row.get(ColumnNum);
 				}
 				if (RowNum == 4) { 
-					cell = (String) grid.getallRows().get(3).get(ColumnNum);
+					row = (ArrayList) lowergrid.get(3);
+					cell = (String) row.get(ColumnNum);
 				}
 				if (RowNum == 5) {
-					cell = (String)  grid.getallRows().get(3).get(ColumnNum);
+					row = (ArrayList) lowergrid.get(4);
+					cell = (String) row.get(ColumnNum);
 				}
 				if (RowNum == 6) {
-					cell = (String)  grid.getallRows().get(3).get(ColumnNum);
+					row = (ArrayList) lowergrid.get(5);
+					cell = (String) row.get(ColumnNum);
 				}
-				else (){
-					System.out.println("The number entered is not valid");
-			}
+				else{
+				}
+			
 			// if bomb is in cell you lose
 				if (cell== "[B]") {
 					System.out.println("Game Over");
 					System.out.println("You have Clicked on a Bomb!");}
 				
-				return cell;
+		}
+			
 		}
 		
 	}
