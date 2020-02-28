@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Bombs1 extends Grids{
 	private int numOfBombs;
 	private int rowsize;
-	private ArrayList coords = new ArrayList(); 
+	private ArrayList coords = new ArrayList(24); 
 	
 	public Bombs1(char type) {//Types: N = Novice, I = Intermediate, A = Advanced
 		if (type == 'N') {
@@ -27,22 +27,30 @@ public class Bombs1 extends Grids{
 	}
 	
 	public ArrayList Bombs() {//Randomly generate coordinates for all the bombs
+		int[] allowed = new int[] {1, 2, 3, 4, 5, 6};
 		Random rand = new Random();
-		int width = rand.nextInt(rowsize);
-		int height = rand.nextInt(rowsize);
+		int width = allowed[rand.nextInt(rowsize)];
+		int height = allowed[rand.nextInt(rowsize)];
 		coords.add(width);
 		coords.add(height);
 		
+		boolean check = true;
+		
 		for (int count = 1; count < numOfBombs; count++) {
-			width = rand.nextInt(rowsize);
-			height = rand.nextInt(rowsize);
-			
+			check = true;
+			int width = allowed[rand.nextInt(rowsize)];
+			int height = allowed[rand.nextInt(rowsize)];
+
 			for (int index = 0; index < coords.size(); index += 2) {
 				if (width == (int)coords.get(index)) {
 					if (height == (int)coords.get(index + 1)){
+						check = false;
 						count--;
 					}
 				}
+				
+			}
+			if (check == true){
 				coords.add(width);
 				coords.add(height);
 			}
