@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
 public class Lower extends Grids{
-	public char type;
-	public Bombs1 game;
-	public int gameSpaces;
-	public ArrayList bombSquad = new ArrayList(36);
+	private char type;
+	private Bombs1 game;
+	private int gameSpaces;
+	private ArrayList bombSquad = new ArrayList(36);
 	
 	public Lower(char level) {
 		this.type = level;
