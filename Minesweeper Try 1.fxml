@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-background-color 0xda5050ff?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.MinesweeperController">
+  <!-- TODO Add Nodes -->
+  <center>
+    <VBox minHeight="713.0" prefHeight="748.0" prefWidth="750.0" BorderPane.alignment="CENTER_RIGHT">
+      <children>
+        <Button fx:id="mine11" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine11Clicked" prefHeight="125.0" prefWidth="125.0" text="" />
+        <Button fx:id="mine21" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine21Clicked" prefHeight="125.0" prefWidth="125.0" text="" />
+        <Button fx:id="mine31" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine31Clicked" prefHeight="125.0" prefWidth="125.0" text="" />
+        <Button fx:id="mine41" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine41Clicked" prefHeight="125.0" prefWidth="125.0" text="" />
+        <Button fx:id="mine51" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine51Clicked" prefHeight="125.0" prefWidth="125.0" text="" />
+        <Button fx:id="mine61" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine61Clicked" prefHeight="125.0" prefWidth="125.0" text="" VBox.vgrow="ALWAYS" />
+        <Button fx:id="mine12" alignment="CENTER" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine12Clicked" prefHeight="125.0" prefWidth="125.0" text="">
+          <VBox.margin>
+            <Insets left="125.0" top="-750.0" />
+          </VBox.margin>
+        </Button>
+        <Button fx:id="mine22" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine22Clicked" prefHeight="125.0" prefWidth="125.0" text="">
+          <VBox.margin>
+            <Insets left="125.0" fx:id="x1" />
+          </VBox.margin>
+        </Button>
+        <Button fx:id="mine32" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine32Clicked" prefHeight="125.0" prefWidth="125.0" text="" VBox.margin="$x1" />
+        <Button fx:id="mine42" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine42Clicked" prefHeight="125.0" prefWidth="125.0" text="">
+          <VBox.margin>
+            <Insets left="125.0" fx:id="x1" />
+          </VBox.margin>
+        </Button>
+        <Button fx:id="mine52" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine52Clicked" prefHeight="125.0" prefWidth="125.0" text="">
+          <VBox.margin>
+            <Insets left="125.0" fx:id="x1" />
+          </VBox.margin>
+        </Button>
+        <Button fx:id="mine62" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine62Clicked" prefHeight="125.0" prefWidth="125.0" text="">
+          <VBox.margin>
+            <Insets left="125.0" fx:id="x1" />
+          </VBox.margin>
+        </Button>
+        <Button id="mine31" fx:id="mine13" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine13Clicked" prefHeight="125.0" prefWidth="125.0" text="">
+          <VBox.margin>
+            <Insets left="250.0" top="-750.0" />
+          </VBox.margin>
+        </Button>
+        <Button fx:id="mine23" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine23Clicked" prefHeight="125.0" prefWidth="125.0" text="">
+          <VBox.margin>
+            <Insets left="250.0" fx:id="x2" />
+          </VBox.margin>
+        </Button>
+        <Button fx:id="mine33" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine33Clicked" prefHeight="125.0" prefWidth="125.0" text="" VBox.margin="$x2" />
+        <Button fx:id="mine43" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine43Clicked" prefHeight="125.0" prefWidth="125.0" text="" VBox.margin="$x2" />
+        <Button fx:id="mine53" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine53Clicked" prefHeight="125.0" prefWidth="125.0" text="" VBox.margin="$x2" />
+        <Button fx:id="mine63" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine63Clicked" prefHeight="125.0" prefWidth="125.0" text="" VBox.margin="$x2" />
+        <Button fx:id="mine14" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine14Clicked" prefHeight="125.0" prefWidth="125.0" text="">
+          <VBox.margin>
+            <Insets left="375.0" top="-750.0" />
+          </VBox.margin>
+        </Button>
+        <Button fx:id="mine24" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine24Clicked" prefHeight="125.0" prefWidth="125.0" text="">
+          <VBox.margin>
+            <Insets left="375.0" fx:id="x3" />
+          </VBox.margin>
+        </Button>
+        <Button fx:id="mine34" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine34Clicked" prefHeight="125.0" prefWidth="125.0" text="" VBox.margin="$x3" />
+        <Button fx:id="mine44" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine44Clicked" prefHeight="125.0" prefWidth="125.0" text="" VBox.margin="$x3" />
+        <Button fx:id="mine54" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine54Clicked" prefHeight="125.0" prefWidth="125.0" text="" VBox.margin="$x3" />
+        <Button fx:id="mine64" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine64Clicked" prefHeight="125.0" prefWidth="125.0" text="" VBox.margin="$x3" />
+        <Button fx:id="mine15" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine15Clicked" prefHeight="125.0" prefWidth="125.0" text="">
+          <VBox.margin>
+            <Insets left="500.0" top="-750.0" />
+          </VBox.margin>
+        </Button>
+        <Button fx:id="mine25" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine25Clicked" prefHeight="125.0" prefWidth="125.0" text="">
+          <VBox.margin>
+            <Insets left="500.0" fx:id="x4" />
+          </VBox.margin>
+        </Button>
+        <Button fx:id="mine35" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine35Clicked" prefHeight="125.0" prefWidth="125.0" text="" VBox.margin="$x4" />
+        <Button fx:id="mine45" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine45Clicked" prefHeight="125.0" prefWidth="125.0" text="" VBox.margin="$x4" />
+        <Button fx:id="mine55" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine55Clicked" prefHeight="125.0" prefWidth="125.0" text="" VBox.margin="$x4" />
+        <Button fx:id="mine65" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine65Clicked" prefHeight="125.0" prefWidth="125.0" text="" VBox.margin="$x4" />
+        <Button fx:id="mine16" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine16Clicked" prefHeight="125.0" prefWidth="125.0" text="">
+          <VBox.margin>
+            <Insets left="625.0" top="-750.0" />
+          </VBox.margin>
+        </Button>
+        <Button fx:id="mine26" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine26Clicked" prefHeight="125.0" prefWidth="125.0" text="">
+          <VBox.margin>
+            <Insets left="625.0" fx:id="x5" />
+          </VBox.margin>
+        </Button>
+        <Button fx:id="mine36" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine36Clicked" prefHeight="125.0" prefWidth="125.0" text="" VBox.margin="$x5" />
+        <Button fx:id="mine46" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine46Clicked" prefHeight="125.0" prefWidth="125.0" text="" VBox.margin="$x5" />
+        <Button fx:id="mine56" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine56Clicked" prefHeight="125.0" prefWidth="125.0" text="" VBox.margin="$x5" />
+        <Button fx:id="mine66" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#mine66Clicked" prefHeight="125.0" prefWidth="125.0" text="" VBox.margin="$x5" />
+      </children>
+    </VBox>
+  </center>
+  <top>
+    <HBox prefHeight="71.0" prefWidth="750.0">
+      <children>
+        <MenuButton fx:id="menuButton" alignment="TOP_CENTER" maxWidth="250.0" minWidth="250.0" mnemonicParsing="false" popupSide="BOTTOM" prefWidth="250.0" text="Menu" textAlignment="LEFT">
+          <font>
+            <Font name="Microsoft PhagsPa" size="24.0" fx:id="x6" />
+          </font>
+          <items>
+            <MenuItem mnemonicParsing="false" text="Restart - Novice" />
+            <MenuItem mnemonicParsing="false" text="Restart - Intermediate" />
+            <MenuItem mnemonicParsing="false" text="Restart - Advanced" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Highscores" />
+          </items>
+        </MenuButton>
+        <Label fx:id="timer" alignment="BOTTOM_CENTER" contentDisplay="CENTER" focusTraversable="false" font="$x6" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="00:00" textAlignment="CENTER">
+          <HBox.margin>
+            <Insets left="250.0" fx:id="x2" />
+          </HBox.margin>
+        </Label>
+      </children>
+    </HBox>
+  </top>
+</BorderPane>
