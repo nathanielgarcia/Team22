@@ -135,9 +135,9 @@
             <Font name="Microsoft PhagsPa" size="24.0" fx:id="x6" />
           </font>
           <items>
-            <MenuItem mnemonicParsing="false" onAction="#NoviceClicked" text="Restart - Novice" />
-            <MenuItem mnemonicParsing="false" onAction="#IntermediateClicked" text="Restart - Intermediate" />
-            <MenuItem mnemonicParsing="false" onAction="#AdvancedClicked" text="Restart - Advanced" />
+            <MenuItem mnemonicParsing="false"  text="Restart - Novice" />
+            <MenuItem mnemonicParsing="false"  text="Restart - Intermediate" />
+            <MenuItem mnemonicParsing="false"  text="Restart - Advanced" />
             <SeparatorMenuItem mnemonicParsing="false" />
             <MenuItem mnemonicParsing="false" text="Highscores" />
           </items>
