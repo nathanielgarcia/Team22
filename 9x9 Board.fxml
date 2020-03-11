@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-background-color 0xda5050ff?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MinesweeperController">
+  <!-- TODO Add Nodes -->
+  <center>
+    <VBox minHeight="713.0" prefHeight="748.0" prefWidth="750.0" BorderPane.alignment="CENTER_RIGHT">
+         <BorderPane.margin>
+            <Insets top="-0.0" />
+         </BorderPane.margin>
+         <children>
+            <GridPane minHeight="750.0" minWidth="750.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="643.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="643.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="643.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="643.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="643.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="643.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="674.0" minHeight="83.0" prefHeight="83.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="83.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="83.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="1" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="2" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="3" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="4" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="5" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="6" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="7" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="8" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.rowIndex="1" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.rowIndex="2" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.rowIndex="3" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.rowIndex="4" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.rowIndex="5" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.rowIndex="6" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.rowIndex="8" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <Button maxWidth="83.0" minHeight="83.0" minWidth="83.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" GridPane.rowIndex="9" />
+               </children>
+            </GridPane>
+         </children>
+    </VBox>
+  </center>
+  <top>
+    <HBox prefHeight="71.0" prefWidth="750.0">
+      <children>
+        <MenuButton fx:id="menuButton" alignment="TOP_CENTER" maxWidth="250.0" minWidth="250.0" mnemonicParsing="false" popupSide="BOTTOM" prefWidth="250.0" text="Menu" textAlignment="LEFT">
+          <font>
+            <Font name="Microsoft PhagsPa" size="24.0" fx:id="x6" />
+          </font>
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#NoviceClicked" text="Restart - Novice" />
+            <MenuItem mnemonicParsing="false" onAction="#IntermediateClicked" text="Restart - Intermediate" />
+            <MenuItem mnemonicParsing="false" onAction="#AdvancedClicked" text="Restart - Advanced" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Highscores" />
+          </items>
+        </MenuButton>
+        <Label fx:id="timer" alignment="BOTTOM_CENTER" contentDisplay="CENTER" focusTraversable="false" font="$x6" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="00:00" textAlignment="CENTER">
+          <HBox.margin>
+            <Insets left="250.0" fx:id="x2" />
+          </HBox.margin>
+        </Label>
+      </children>
+    </HBox>
+  </top>
+</BorderPane>
