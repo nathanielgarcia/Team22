@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
@@ -330,6 +331,9 @@ public class Minesweep9Controller extends Main{
 
     @FXML
     private Button mine45;
+    
+    @FXML
+    private Button mine44;
 
 
     @FXML
@@ -350,6 +354,490 @@ public class Minesweep9Controller extends Main{
 
     @FXML
     private Button mine81;
+    
+    
+    @FXML
+    void mine11Clicked(ActionEvent event) {
+    	mine11.setText((String) boardContents.get(0));
+    }
+
+    @FXML
+    void mine12Clicked(ActionEvent event) {
+    	mine12.setText((String) boardContents.get(1));
+
+    }
+
+    @FXML
+    void mine13Clicked(ActionEvent event) {
+    	mine13.setText((String) boardContents.get(2));
+    }
+
+    @FXML
+    void mine14Clicked(ActionEvent event) {
+    	mine14.setText((String) boardContents.get(3));
+
+    }
+
+    @FXML
+    void mine15Clicked(ActionEvent event) {
+    	mine15.setText((String) boardContents.get(4));
+
+    }
+
+    @FXML
+    void mine16Clicked(ActionEvent event) {
+    	mine16.setText((String) boardContents.get(5));
+
+    }
+
+    @FXML
+    void mine17Clicked(ActionEvent event) {
+    	mine17.setText((String) boardContents.get(6));
+    }
+
+    @FXML
+    void mine18Clicked(ActionEvent event) {
+    	mine18.setText((String) boardContents.get(7));
+
+    }
+
+    @FXML
+    void mine19Clicked(ActionEvent event) {
+    	mine19.setText((String) boardContents.get(8));
+
+    }
+
+    @FXML
+    void mine21Clicked(ActionEvent event) {
+    	mine21.setText((String) boardContents.get(9));
+
+    }
+
+    @FXML
+    void mine22Clicked(ActionEvent event) {
+    	mine22.setText((String) boardContents.get(10));
+
+    }
+
+    @FXML
+    void mine23Clicked(ActionEvent event) {
+    	mine23.setText((String) boardContents.get(11));
+
+    }
+
+    @FXML
+    void mine24Clicked(ActionEvent event) {
+    	mine24.setText((String) boardContents.get(12));
+
+    }
+
+    @FXML
+    void mine25Clicked(ActionEvent event) {
+    	mine25.setText((String) boardContents.get(13));
+
+    }
+
+    @FXML
+    void mine26Clicked(ActionEvent event) {
+    	mine26.setText((String) boardContents.get(14));
+
+    }
+
+    @FXML
+    void mine27Clicked(ActionEvent event) {
+    	mine27.setText((String) boardContents.get(15));
+
+    }
+
+    @FXML
+    void mine28Clicked(ActionEvent event) {
+    	mine28.setText((String) boardContents.get(16));
+
+    }
+
+    @FXML
+    void mine29Clicked(ActionEvent event) {
+    	mine29.setText((String) boardContents.get(17));
+
+    }
+
+    @FXML
+    void mine31Clicked(ActionEvent event) {
+    	mine31.setText((String) boardContents.get(18));
+
+    }
+
+    @FXML
+    void mine32Clicked(ActionEvent event) {
+    	mine32.setText((String) boardContents.get(19));
+
+    }
+
+    @FXML
+    void mine33Clicked(ActionEvent event) {
+    	mine33.setText((String) boardContents.get(20));
+
+    }
+
+    @FXML
+    void mine34Clicked(ActionEvent event) {
+    	mine34.setText((String) boardContents.get(21));
+
+    }
+
+    @FXML
+    void mine35Clicked(ActionEvent event) {
+    	mine35.setText((String) boardContents.get(22));
+
+    }
+
+    @FXML
+    void mine36Clicked(ActionEvent event) {
+    	mine36.setText((String) boardContents.get(23));
+
+    }
+
+    @FXML
+    void mine37Clicked(ActionEvent event) {
+    	mine37.setText((String) boardContents.get(24));
+
+    }
+
+    @FXML
+    void mine38Clicked(ActionEvent event) {
+    	mine38.setText((String) boardContents.get(25));
+
+    }
+    
+    @FXML
+    void mine39Clicked(ActionEvent event) {
+    	mine39.setText((String) boardContents.get(26));
+
+    }
+
+    @FXML
+    void mine41Clicked(ActionEvent event) {
+    	mine41.setText((String) boardContents.get(27));
+
+    }
+
+    @FXML
+    void mine42Clicked(ActionEvent event) {
+    	mine42.setText((String) boardContents.get(28));
+
+    }
+
+    @FXML
+    void mine43Clicked(ActionEvent event) {
+    	mine43.setText((String) boardContents.get(29));
+
+    }
+
+    @FXML
+    void mine44Clicked(ActionEvent event) {
+    	mine44.setText((String) boardContents.get(30));
+
+    }
+
+    @FXML
+    void mine45Clicked(ActionEvent event) {
+    	mine45.setText((String) boardContents.get(31));
+
+    }
+
+    @FXML
+    void mine46Clicked(ActionEvent event) {
+    	mine46.setText((String) boardContents.get(32));
+
+    }
+
+    @FXML
+    void mine47Clicked(ActionEvent event) {
+    	mine47.setText((String) boardContents.get(33));
+
+    }
+
+    @FXML
+    void mine48Clicked(ActionEvent event) {
+    	mine48.setText((String) boardContents.get(34));
+
+    }
+
+    
+
+    @FXML
+    void mine49Clicked(ActionEvent event) {
+    	mine49.setText((String) boardContents.get(35));
+
+        }
+
+    
+
+    @FXML
+    void mine51Clicked(ActionEvent event) {
+    	mine51.setText((String) boardContents.get(36));
+
+    }
+
+    @FXML
+    void mine52Clicked(ActionEvent event) {
+    	mine52.setText((String) boardContents.get(37));
+
+    }
+
+    @FXML
+    void mine53Clicked(ActionEvent event) {
+    	mine53.setText((String) boardContents.get(38));
+
+    }
+
+    @FXML
+    void mine54Clicked(ActionEvent event) {
+    	mine54.setText((String) boardContents.get(39));
+
+    }
+
+    @FXML
+    void mine55Clicked(ActionEvent event) {
+    	mine55.setText((String) boardContents.get(40));
+
+    }
+
+    @FXML
+    void mine56Clicked(ActionEvent event) {
+    	mine56.setText((String) boardContents.get(41));
+
+    }
+
+    @FXML
+    void mine57Clicked(ActionEvent event) {
+    	mine57.setText((String) boardContents.get(42));
+
+    }
+
+    @FXML
+    void mine58Clicked(ActionEvent event) {
+    	mine58.setText((String) boardContents.get(43));
+
+    }
+
+    @FXML
+    void mine59Clicked(ActionEvent event) {
+    	mine59.setText((String) boardContents.get(44));
+
+    }
+
+    @FXML
+    void mine61Clicked(ActionEvent event) {
+    	mine61.setText((String) boardContents.get(45));
+    }
+
+    @FXML
+    void mine62Clicked(ActionEvent event) {
+    	mine62.setText((String) boardContents.get(46));
+
+    }
+
+    @FXML
+    void mine63Clicked(ActionEvent event) {
+    	mine63.setText((String) boardContents.get(47));
+
+    }
+
+    @FXML
+    void mine64Clicked(ActionEvent event) {
+    	mine64.setText((String) boardContents.get(48));
+
+    }
+
+    @FXML
+    void mine65Clicked(ActionEvent event) {
+    	mine65.setText((String) boardContents.get(49));
+
+    }
+
+    @FXML
+    void mine66Clicked(ActionEvent event) {
+    	mine66.setText((String) boardContents.get(50));
+
+    }
+
+    @FXML
+    void mine67Clicked(ActionEvent event) {
+    	mine67.setText((String) boardContents.get(51));
+    }
+
+    @FXML
+    void mine68Clicked(ActionEvent event) {
+    	mine68.setText((String) boardContents.get(52));
+
+    }
+
+    @FXML
+    void mine69Clicked(ActionEvent event) {
+    	mine69.setText((String) boardContents.get(53));
+
+    }
+
+    @FXML
+    void mine71Clicked(ActionEvent event) {
+    	mine71.setText((String) boardContents.get(54));
+
+    }
+
+    @FXML
+    void mine72Clicked(ActionEvent event) {
+    	mine72.setText((String) boardContents.get(55));
+
+    }
+
+    @FXML
+    void mine73Clicked(ActionEvent event) {
+    	mine73.setText((String) boardContents.get(56));
+
+    }
+
+    @FXML
+    void mine74Clicked(ActionEvent event) {
+    	mine74.setText((String) boardContents.get(57));
+
+    }
+
+    @FXML
+    void mine75Clicked(ActionEvent event) {
+    	mine75.setText((String) boardContents.get(55));
+
+    }
+
+    @FXML
+    void mine76Clicked(ActionEvent event) {
+    	mine76.setText((String) boardContents.get(56));
+
+    }
+
+    @FXML
+    void mine77Clicked(ActionEvent event) {
+    	mine77.setText((String) boardContents.get(57));
+
+    }
+
+    @FXML
+    void mine78Clicked(ActionEvent event) {
+    	mine78.setText((String) boardContents.get(58));
+    }
+
+    @FXML
+    void mine79Clicked(ActionEvent event) {
+    	mine79.setText((String) boardContents.get(59));
+
+    }
+
+    @FXML
+    void mine81Clicked(ActionEvent event) {
+    	mine81.setText((String) boardContents.get(60));
+
+    }
+
+    @FXML
+    void mine82Clicked(ActionEvent event) {
+    	mine82.setText((String) boardContents.get(61));
+
+    }
+
+    @FXML
+    void mine83Clicked(ActionEvent event) {
+    	mine83.setText((String) boardContents.get(62));
+
+    }
+
+    @FXML
+    void mine84Clicked(ActionEvent event) {
+    	mine84.setText((String) boardContents.get(63));
+
+    }
+
+    @FXML
+    void mine85Clicked(ActionEvent event) {
+    	mine85.setText((String) boardContents.get(64));
+
+    }
+
+    @FXML
+    void mine86Clicked(ActionEvent event) {
+    	mine86.setText((String) boardContents.get(65));
+    }
+
+    @FXML
+    void mine87Clicked(ActionEvent event) {
+    	mine87.setText((String) boardContents.get(66));
+
+    }
+
+    @FXML
+    void mine88Clicked(ActionEvent event) {
+    	mine88.setText((String) boardContents.get(67));
+    }
+
+    @FXML
+    void mine89Clicked(ActionEvent event) {
+    	mine89.setText((String) boardContents.get(68));
+
+    }
+
+    @FXML
+    void mine99Clicked(ActionEvent event) {
+    	mine99.setText((String) boardContents.get(77));
+
+    }
+
+    @FXML
+    void mine98Clicked(ActionEvent event) {
+    	mine98.setText((String) boardContents.get(76));
+    	
+    }
+
+    @FXML
+    void mine97Clicked(ActionEvent event) {
+    	mine97.setText((String) boardContents.get(75));
+    }
+
+    @FXML
+    void mine96Clicked(ActionEvent event) {
+    	mine96.setText((String) boardContents.get(74));
+
+    }
+
+    @FXML
+    void mine95Clicked(ActionEvent event) {
+    	mine95.setText((String) boardContents.get(73));
+
+    }
+
+    @FXML
+    void mine94Clicked(ActionEvent event) {
+    	mine94.setText((String) boardContents.get(72));
+
+    }
+
+    @FXML
+    void mine93Clicked(ActionEvent event) {
+    	mine93.setText((String) boardContents.get(71));
+
+    }
+
+    @FXML
+    void mine92Clicked(ActionEvent event) {
+    	mine92.setText((String) boardContents.get(70));
+
+    }
+
+    @FXML
+    void mine91Clicked(ActionEvent event) {
+    	mine91.setText((String) boardContents.get(69));
+
+    }
+    
+    
     
     
     @FXML
