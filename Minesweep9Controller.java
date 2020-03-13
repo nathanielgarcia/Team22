@@ -1,6 +1,7 @@
 package application;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import javafx.application.Platform;
@@ -13,9 +14,348 @@ import javafx.scene.text.Font;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Minesweep9Controller {
-	
-	int seconds = 0;
+public class Minesweep9Controller extends Main{
+	   
+    @FXML
+    private ResourceBundle resources;
+
+    
+    @FXML
+    private URL location;
+
+    
+    @FXML
+    private Button mine39;
+
+    
+    @FXML
+    private Button mine38;
+
+
+    @FXML
+    private Button mine33;
+
+
+    @FXML
+    private Button mine77;
+
+
+    @FXML
+    private Button mine32;
+
+
+    @FXML
+    private Button mine76;
+
+
+    @FXML
+    private Button mine31;
+
+
+    @FXML
+    private Button mine75;
+
+
+    @FXML
+    private Button mine74;
+
+
+    @FXML
+    private Button mine37;
+
+
+    @FXML
+    private Button mine36;
+
+
+    @FXML
+    private Button mine35;
+
+
+    @FXML
+    private Button mine79;
+
+
+    @FXML
+    private Button mine34;
+
+
+    @FXML
+    private Button mine78;
+
+
+    @FXML
+    private Button mine73;
+
+
+    @FXML
+    private Button mine72;
+
+
+    @FXML
+    private Button mine71;
+
+
+    @FXML
+    private Button mine29;
+
+
+    @FXML
+    private Button mine28;
+
+
+    @FXML
+    private Button mine27;
+
+
+    @FXML
+    private Button mine22;
+
+
+    @FXML
+    private Button mine66;
+
+
+    @FXML
+    private Button mine21;
+
+
+    @FXML
+    private Button mine65;
+
+
+    @FXML
+    private Button mine64;
+
+
+    @FXML
+    private Button mine63;
+
+
+    @FXML
+    private Button mine26;
+
+
+    @FXML
+    private Button mine25;
+
+
+    @FXML
+    private Button mine69;
+
+
+    @FXML
+    private Button mine24;
+
+
+    @FXML
+    private Button mine68;
+
+
+    @FXML
+    private Button mine23;
+
+
+    @FXML
+    private Button mine67;
+
+
+    @FXML
+    private Button mine62;
+
+
+    @FXML
+    private Button mine61;
+
+
+    @FXML
+    private Insets x2;
+
+
+    @FXML
+    private Font x6;
+
+
+    @FXML
+    private Button mine19;
+
+
+    @FXML
+    private Button mine18;
+
+
+    @FXML
+    private Button mine17;
+
+
+    @FXML
+    private Button mine16;
+
+
+    @FXML
+    private Button mine11;
+
+
+    @FXML
+    private Button mine55;
+
+
+    @FXML
+    private Button mine99;
+
+
+    @FXML
+    private Button mine54;
+
+
+    @FXML
+    private Button mine98;
+
+
+    @FXML
+    private Button mine53;
+
+
+    @FXML
+    private Button mine97;
+
+
+    @FXML
+    private Button mine52;
+
+
+    @FXML
+    private Button mine96;
+
+
+    @FXML
+    private Button mine15;
+
+
+    @FXML
+    private Button mine59;
+
+
+    @FXML
+    private Button mine14;
+
+
+    @FXML
+    private Button mine58;
+
+
+    @FXML
+    private Button mine13;
+
+
+    @FXML
+    private Button mine57;
+
+
+    @FXML
+    private Button mine12;
+
+
+    @FXML
+    private Button mine56;
+
+
+    @FXML
+    private Button mine91;
+
+
+    @FXML
+    private Button mine51;
+
+
+    @FXML
+    private Button mine95;
+
+
+    @FXML
+    private Button mine94;
+
+
+    @FXML
+    private Button mine93;
+
+
+    @FXML
+    private Button mine92;
+
+
+    @FXML
+    private Button mine49;
+
+
+    @FXML
+    private Button mine88;
+
+
+    @FXML
+    private Button mine43;
+
+
+    @FXML
+    private Button mine87;
+
+
+    @FXML
+    private Button mine42;
+
+
+    @FXML
+    private Button mine86;
+
+
+    @FXML
+    private Button mine41;
+
+
+    @FXML
+    private Button mine85;
+
+
+    @FXML
+    private Button mine48;
+
+
+    @FXML
+    private Button mine47;
+
+
+    @FXML
+    private Button mine46;
+
+
+    @FXML
+    private Button mine45;
+
+
+    @FXML
+    private Button mine89;
+
+
+    @FXML
+    private Button mine84;
+
+
+    @FXML
+    private Button mine83;
+
+
+    @FXML
+    private Button mine82;
+
+
+    @FXML
+    private Button mine81;
+    
+    
+    @FXML
+    private Label timer;
+    
+    int seconds = 0;
     Timer count = new Timer();
     TimerTask task = new TimerTask() {
     	public void run() {
@@ -23,298 +363,46 @@ public class Minesweep9Controller {
     		seconds++;
     	}
     };
+    
+    
+    @FXML
+    private ArrayList boardContents;
 
+
+    @FXML
+    private MenuButton menuButton;
+    
     String timerSetter(int time) {
     	String spitBack = "Hello";
     	if (seconds < 10) {
     		spitBack = "00:0" + time;
     	}
-    	
     	else if (seconds >= 10 && seconds <= 59) {
     		spitBack = "00:" + time;
     	}
-    	
     	else if (seconds >= 60) {
     		int minutes = seconds / 60;
     		int leftover = seconds - (minutes * 60); 
-    		
+
     		if (minutes < 10 && leftover < 10) {
     			spitBack = "0" + minutes + ":0" + leftover;
     		}
-    		
     		else if (minutes < 10 && leftover >= 10 && leftover <= 59) {
     			spitBack = "0" + minutes + ":" + leftover;
     		}
-    		
     		else if (minutes >= 10 && leftover < 10) {
     			spitBack = minutes + ":0" + leftover;
     		}
-    		
     		else if (minutes >= 10 && leftover >= 10 && leftover <= 59) {
     			spitBack = minutes + ":" + leftover;
     		}
     	}
-    	
     	return spitBack;
     }
-
-    @FXML
-    private ResourceBundle resources;
-
-    @FXML
-    private URL location;
-
-    @FXML
-    private Button mine39;
-
-    @FXML
-    private Button mine38;
-
-    @FXML
-    private Button mine33;
-
-    @FXML
-    private Button mine77;
-
-    @FXML
-    private Button mine32;
-
-    @FXML
-    private Button mine76;
-
-    @FXML
-    private Button mine31;
-
-    @FXML
-    private Button mine75;
-
-    @FXML
-    private Button mine74;
-
-    @FXML
-    private Button mine37;
-
-    @FXML
-    private Button mine36;
-
-    @FXML
-    private Button mine35;
-
-    @FXML
-    private Button mine79;
-
-    @FXML
-    private Button mine34;
-
-    @FXML
-    private Button mine78;
-
-    @FXML
-    private Button mine73;
-
-    @FXML
-    private Button mine72;
-
-    @FXML
-    private Button mine71;
-
-    @FXML
-    private Button mine29;
-
-    @FXML
-    private Button mine28;
-
-    @FXML
-    private Button mine27;
-
-    @FXML
-    private Button mine22;
-
-    @FXML
-    private Button mine66;
-
-    @FXML
-    private Button mine21;
-
-    @FXML
-    private Button mine65;
-
-    @FXML
-    private Button mine64;
-
-    @FXML
-    private Button mine63;
-
-    @FXML
-    private Button mine26;
-
-    @FXML
-    private Button mine25;
-
-    @FXML
-    private Button mine69;
-
-    @FXML
-    private Button mine24;
-
-    @FXML
-    private Button mine68;
-
-    @FXML
-    private Button mine23;
-
-    @FXML
-    private Button mine67;
-
-    @FXML
-    private Button mine62;
-
-    @FXML
-    private Button mine61;
-
-    @FXML
-    private Insets x2;
-
-    @FXML
-    private Font x6;
-
-    @FXML
-    private Button mine19;
-
-    @FXML
-    private Button mine18;
-
-    @FXML
-    private Button mine17;
-
-    @FXML
-    private Button mine16;
-
-    @FXML
-    private Button mine11;
-
-    @FXML
-    private Button mine55;
-
-    @FXML
-    private Button mine99;
-
-    @FXML
-    private Button mine54;
-
-    @FXML
-    private Button mine98;
-
-    @FXML
-    private Button mine53;
-
-    @FXML
-    private Button mine97;
-
-    @FXML
-    private Button mine52;
-
-    @FXML
-    private Button mine96;
-
-    @FXML
-    private Button mine15;
-
-    @FXML
-    private Button mine59;
-
-    @FXML
-    private Button mine14;
-
-    @FXML
-    private Button mine58;
-
-    @FXML
-    private Button mine13;
-
-    @FXML
-    private Button mine57;
-
-    @FXML
-    private Button mine12;
-
-    @FXML
-    private Button mine56;
-
-    @FXML
-    private Button mine91;
-
-    @FXML
-    private Label timer;
-
-    @FXML
-    private Button mine51;
-
-    @FXML
-    private Button mine95;
-
-    @FXML
-    private Button mine94;
-
-    @FXML
-    private Button mine93;
-
-    @FXML
-    private Button mine92;
-
-    @FXML
-    private Button mine49;
-
-    @FXML
-    private Button mine88;
-
-    @FXML
-    private Button mine43;
-
-    @FXML
-    private Button mine87;
-
-    @FXML
-    private Button mine42;
-
-    @FXML
-    private Button mine86;
-
-    @FXML
-    private Button mine41;
-
-    @FXML
-    private Button mine85;
-
-    @FXML
-    private Button mine48;
-
-    @FXML
-    private Button mine47;
-
-    @FXML
-    private Button mine46;
-
-    @FXML
-    private Button mine45;
-
-    @FXML
-    private Button mine89;
-
-    @FXML
-    private Button mine84;
-
-    @FXML
-    private Button mine83;
-
-    @FXML
-    private Button mine82;
-
-    @FXML
-    private Button mine81;
-
-    @FXML
-    private MenuButton menuButton;
+    
+    void setIntermediateBoardContents(ArrayList contents) {
+    	this.boardContents = contents;
+    }
 
     @FXML
     void initialize() {
@@ -401,8 +489,10 @@ public class Minesweep9Controller {
         assert mine83 != null : "fx:id=\"mine83\" was not injected: check your FXML file '9x9 Board.fxml'.";
         assert mine82 != null : "fx:id=\"mine82\" was not injected: check your FXML file '9x9 Board.fxml'.";
         assert mine81 != null : "fx:id=\"mine81\" was not injected: check your FXML file '9x9 Board.fxml'.";
-        assert menuButton != null : "fx:id=\"menuButton\" was not injected: check your FXML file '9x9 Board.fxml'.";}
-}
-    
-    
-     
+        assert menuButton != null : "fx:id=\"menuButton\" was not injected: check your FXML file '9x9 Board.fxml'.";
+        
+        Bombs l = new Bombs(2);
+        setIntermediateBoardContents(l.buildLowerBoard(l.BombMaker()));
+        count.scheduleAtFixedRate(task,  1000, 1000);
+    }
+}     
