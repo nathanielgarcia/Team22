@@ -116,7 +116,7 @@ public class NearbySquares {
 					Open(i + window.getBoardSize() + 1);
 				}
 			}
-			else if (i % (window.getBoardSize() - 1) == 0) {
+			else if ((i - 1) % window.getBoardSize() == 0) {
 				if (!tileList.get(i - 1).getOpen()) {
 					Open(i - 1);
 				}
