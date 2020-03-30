@@ -139,7 +139,7 @@ public class NumberMaker {
 						}
 					}
 
-					else if (i % (boardSize - 1) == 0 && i != gameSpaces - 1) {
+					else if ((i + 1) % boardSize == 0 && i != gameSpaces - 1) {
 						
 						if (bombSquad.get(i - boardSize) == "B") {
 							num++;
