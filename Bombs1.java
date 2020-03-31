@@ -6,6 +6,14 @@ public class Bombs1 extends Grids{
 	private int rowsize;
 	private ArrayList coords = new ArrayList(); 
 	
+	public Bombs1() {
+			this.numOfBombs = 12;
+			this.rowsize = 6;
+		
+	}
+	public int getRowSize() {
+		return rowsize;
+	}
 	
 	public ArrayList Bombs() {//Randomly generate coordinates for all the bombs
 		int[] allowed = new int[] {1, 2, 3, 4, 5, 6};
@@ -18,8 +26,8 @@ public class Bombs1 extends Grids{
 
 		for (int count = 1; count < numOfBombs; count++) {
 			check = true;
-			int width = allowed[rand.nextInt(rowsize)];
-			int height = allowed[rand.nextInt(rowsize)];
+			width = allowed[rand.nextInt(rowsize)];
+			height = allowed[rand.nextInt(rowsize)];
 			
 			for (int index = 0; index < coords.size(); index += 2) {
 				if (width == (int)coords.get(index)) {

@@ -1,5 +1,8 @@
+import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
+
+import org.junit.jupiter.api.Test;
 
 public class PlayerTest {
 
@@ -10,8 +13,8 @@ public class PlayerTest {
 		ArrayList lowergrid = lower.setLowerBoard();
 		Grids  upper = new Grids();
 		upper.Grids('N');
-		ArrayList uppergrid= upper.setLowerBoard();
-		c.Move(lowergrid);
+		ArrayList uppergrid = upper.setUpperBoard();
+		c.Move(lowergrid, uppergrid);
 
 	}
 

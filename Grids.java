@@ -61,14 +61,6 @@ public class Grids extends Player{
 			allRows.add(row6);
 			
 		}
-		else if (type == 'I') {
-			//9
-			
-		}
-		
-		else {//12
-			
-		}
 		return allRows;
 		
 	}
@@ -107,15 +99,6 @@ public class Grids extends Player{
 			allRows.add(row4);
 			allRows.add(row5);
 			allRows.add(row6);
-			
-		}
-		else if (type == 'I') {
-			//9
-			
-		}
-		
-		else {//12
-			
 		}
 		return allRows;
 		
