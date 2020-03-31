@@ -6,25 +6,6 @@ public class Bombs1 extends Grids{
 	private int rowsize;
 	private ArrayList coords = new ArrayList(); 
 	
-	public Bombs1(char type) {//Types: N = Novice, I = Intermediate, A = Advanced
-		if (type == 'N') {
-			this.numOfBombs = 12;
-			this.rowsize = 6;
-		}
-		
-		if (type == 'I') {
-			this.numOfBombs = 27;
-			this.rowsize = 9;
-		}
-		
-		if (type == 'A') {
-			this.numOfBombs = 48;
-			this.rowsize = 12;
-		}
-	}
-	public int getRowSize() {
-		return rowsize;
-	}
 	
 	public ArrayList Bombs() {//Randomly generate coordinates for all the bombs
 		int[] allowed = new int[] {1, 2, 3, 4, 5, 6};
