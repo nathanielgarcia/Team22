@@ -29,7 +29,7 @@ public class NumberMaker {
 	
 	public ArrayList<Object> addNumbers() {
 		
-		for (int i = 0; i < (boardSize * boardSize); i++) {
+		for (int i = 0; i < (gameSpaces); i++) {
 			if (bombSquad.get(i) == " ") {
 				int num = 0;
 
@@ -78,7 +78,7 @@ public class NumberMaker {
 						}
 					}
 
-					else if (i == boardSize - 1) {
+					else if (i == gameSpaces - 1) {
 
 						if (bombSquad.get(i - 1) == "B") {
 							num++;
@@ -265,7 +265,6 @@ public class NumberMaker {
 						}
 					}
 			
-
 				if (num != 0) {
 					String inp = ("" + num);
 					bombSquad.set(i, inp);

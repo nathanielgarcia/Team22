@@ -15,6 +15,7 @@ public class MenuWindow extends VBox{
     private Button advancedButton = new Button("Advanced");
     private Button intermediateButton = new Button("Intermediate");
     private Button noviceButton = new Button("Novice");
+    private Button howToPlayButton = new Button("How To Play");
     private Label title = new Label("MINESWEEPER");
     private Image image = new Image("TimeWarpBackground.jpg");
     private ImageView menuBackground = new ImageView(image);
@@ -23,13 +24,11 @@ public class MenuWindow extends VBox{
     	menuBackground.setFitWidth(500);
     	menuBackground.setFitHeight(350);
     	
-    	
     	title.setFont(new Font("Segoe UI Black", 50));
     	title.setTextFill(Color.GAINSBORO);
     	
     	HBox titleHBox = new HBox(title);
     	titleHBox.setAlignment(Pos.TOP_CENTER);
-    	
     	
     	noviceButton.setOnAction(mCon);
     	noviceButton.setFont(new Font("Segoe UI Semibold", 15));
@@ -53,8 +52,18 @@ public class MenuWindow extends VBox{
     	optionHBox.setAlignment(Pos.CENTER);
     	optionHBox.setSpacing(50);
     	
+    	howToPlayButton.setOnAction(mCon);
+    	howToPlayButton.setFont(new Font("Segoe UI Semibold", 15));
+    	howToPlayButton.setTextFill(Color.GAINSBORO);
+    	howToPlayButton.setStyle("-fx-border-color: #000000");
+    	howToPlayButton.setStyle("-fx-background-color: #000000");
+    	
+    	VBox htpBox = new VBox(50);
+    	htpBox.getChildren().addAll(optionHBox, howToPlayButton);
+    	htpBox.setAlignment(Pos.CENTER);
+    	
     	StackPane stack = new StackPane();
-    	stack.getChildren().addAll(menuBackground, titleHBox, optionHBox);
+    	stack.getChildren().addAll(menuBackground, titleHBox, htpBox);
     	
     	this.getChildren().addAll(stack);    	
     }
@@ -69,6 +78,10 @@ public class MenuWindow extends VBox{
     
     public Button getAdvancedButton() {
     	return advancedButton;
+    }
+    
+    public Button getHowToPlayButton() {
+    	return howToPlayButton;
     }
 
 }

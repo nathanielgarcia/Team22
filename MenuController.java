@@ -26,16 +26,30 @@ public class MenuController extends GUIGame implements EventHandler<ActionEvent>
 		else if (source.equals(menu.getAdvancedButton())) {
 			super.setBoardSize(22);
 		}
-		try {
-			super.getConfig().getGame().setup();
-			BoardController bCon = new BoardController(primaryStage);
-			bCon.initData(super.getBoardSize(), super.getBoardContents());
-			Scene boardScene = new Scene(bCon.getWindow(), 800, 600);
-			primaryStage.setScene(boardScene);
 		
+		if (source.equals(menu.getHowToPlayButton())) {
+			try {
+				boolean inGame = false;
+				HowToPlayController htpCon = new HowToPlayController(primaryStage);
+				htpCon.initData(inGame);
+				Scene scene = new Scene(htpCon.getWindow(), 800, 600);
+				primaryStage.setScene(scene);
+			}
+			catch (Exception exc) {
+				
+			}	
 		}
-		catch (Exception e) {
-			
+		else {
+			try {
+				super.getConfig().getGame().setup();
+				BoardController bCon = new BoardController(primaryStage);
+				bCon.initData(super.getBoardSize(), super.getBoardContents());
+				Scene boardScene = new Scene(bCon.getWindow(), 800, 600);
+				primaryStage.setScene(boardScene);
+			}
+			catch (Exception e) {
+				
+			}
 		}
 	}
 	

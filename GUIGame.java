@@ -23,7 +23,6 @@ public class GUIGame extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			Scene scene = new Scene(new MenuController(primaryStage).getWindow(), 500, 350);
-			BorderPane root = new BorderPane();
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();

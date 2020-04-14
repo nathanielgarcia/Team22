@@ -1,15 +1,9 @@
 package application;
 
-import javafx.geometry.Pos;
-import javafx.scene.image.Image;
 import javafx.scene.input.MouseButton;
-import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.Line;
-import javafx.scene.shape.Polygon;
 import javafx.scene.shape.Rectangle;
-import javafx.scene.shape.StrokeType;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextAlignment;
@@ -18,18 +12,13 @@ public class SquareMaker extends StackPane{
 	private BoardWindow window;
 	private int xcoord, ycoord, index;
 	private boolean open = false;
-	private double xsquare, ysquare;
 	private Rectangle squareLayout;
-	private Line flagPole;
-	private Polygon flag;
 	private Text squareContent = new Text();
 	
 	public SquareMaker(int x, int y, double xsquare, double ysquare, String contents, int index, BoardWindow window) {
 		this.window = window;
 		this.xcoord = x;
 		this.ycoord = y;
-		this.xsquare = xsquare;
-		this.ysquare = ysquare;
 		this.index = index;
 		
 		squareContent.setFont(new Font("Segoe UI BLACK", 18));
@@ -64,25 +53,9 @@ public class SquareMaker extends StackPane{
 			squareContent.setFill(Color.BLACK);
 		}
 		
-		//flag = new Polygon();
-		//flag.setStrokeType(StrokeType.INSIDE);
-		//flag.getPoints().addAll(new Double[]{
-			//(xcoord * xsquare) + (xsquare / 2) + 6, (ycoord * ysquare) + 6,
-			//(xcoord * xsquare) + (xsquare / 2) + 6, (ycoord * ysquare) + 18,
-			//(xcoord * xsquare) + (xsquare / 2) + 12, (ycoord * ysquare) + 12		
-		//});
-		//flag.setStroke(Color.RED);
-		//flag.setFill(Color.RED);
-		//flag.setVisible(false);
-		
 		squareContent.setVisible(open);
 		setTranslateX(xcoord * xsquare);
 		setTranslateY(ycoord * ysquare);
-		
-		//flagPole = new Line((xcoord * xsquare) + (xsquare / 2), (ycoord * ysquare) + 6, (xcoord * xsquare) + (xsquare / 2), (ycoord * ysquare) + (ysquare - 6));
-		//flagPole.setStroke(Color.RED);
-		//flagPole.setStrokeWidth(2);
-		//flagPole.setVisible(false);
 		
 		squareLayout = new Rectangle(xsquare, ysquare);
 		squareLayout.setStroke(Color.GHOSTWHITE);
@@ -104,9 +77,6 @@ public class SquareMaker extends StackPane{
 					else if (squareLayout.getFill() == Color.BLACK) {
 						squareLayout.setFill(Color.RED);
 					}
-					//add a flag
-					//flagPole.setVisible(true);
-					//flag.setVisible(true);
 				}
 			});
 		}		
