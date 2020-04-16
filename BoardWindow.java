@@ -31,6 +31,7 @@ public class BoardWindow extends VBox{
 	private int openedSquares;
 	private int squaresToOpen;
 	private int bombsOpened = 0;
+	private boolean timerOn = false;
 	private boolean stopTimer = false;
 	private ArrayList<SquareMaker> tileList = new ArrayList<SquareMaker>(boardSize * boardSize);
 	private Menu menu = new Menu("Menu");
@@ -104,7 +105,7 @@ public class BoardWindow extends VBox{
 			}
 		}
 		
-		if (openedSquares == 1) {
+		if (openedSquares >= 1 && !timerOn) {
 			timerStart();
 		}
 		
@@ -118,6 +119,7 @@ public class BoardWindow extends VBox{
 			stopTimer = true;
 			bCon.handle(false);
 		}
+		timerOn = true;
 	}
 	
 	public void timerStart() {
